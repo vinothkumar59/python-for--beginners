@@ -1,8 +1,8 @@
 """
 Topic : Variables
-Author : Vinoth Kumar
 
-Variables are used to store data in memory.
+Author : Vinoth Kumar
+Description : Examples of Python variables
 """
 
 # Integer
