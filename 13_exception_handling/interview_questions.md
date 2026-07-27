@@ -1,39 +1,66 @@
-try:
-    print(10/0)
+# Exception Handling Interview Questions (Questions with Answers)
 
-except ZeroDivisionError:
-    print("Cannot Divide")
+## 1. What is an exception?
 
-try:
-    print(int("ABC"))
+**Answer:** An exception is a runtime error that interrupts the normal execution of a program.
 
-except ValueError:
-    print("Invalid Number")
+---
 
-try:
-    data = [1,2]
+## 2. What is the purpose of try?
 
-    print(data[5])
+**Answer:** The `try` block contains code that might raise an exception.
 
-except IndexError:
-    print("Index Error")
+---
 
-try:
-    employee = {"name":"Vinoth"}
+## 3. What is except?
 
-    print(employee["salary"])
+**Answer:** It catches and handles exceptions raised in the `try` block.
 
-except KeyError:
-    print("Key Missing")
+---
 
-try:
-    print(100/10)
+## 4. What is else?
 
-except:
-    print("Error")
+**Answer:** The `else` block runs only if no exception occurs.
 
-else:
-    print("Success")
+---
 
-finally:
-    print("Completed")
+## 5. What is finally?
+
+**Answer:** The `finally` block always executes, whether an exception occurs or not.
+
+---
+
+## 6. What is raise?
+
+**Answer:** `raise` is used to create and throw an exception manually.
+
+---
+
+## 7. Difference between Exception and BaseException?
+
+**Answer:** `Exception` is the base class for most application errors. `BaseException` is the root of Python's exception hierarchy and also includes system-level exceptions like `KeyboardInterrupt` and `SystemExit`.
+
+---
+
+## 8. Why should we catch specific exceptions?
+
+**Answer:** It makes debugging easier and avoids hiding unexpected errors.
+
+---
+
+## 9. Why is exception handling important in ETL?
+
+**Answer:** ETL jobs process many files and records. Exception handling prevents a single bad record or missing file from crashing the entire pipeline and allows logging and recovery.
+
+---
+
+## 10. Which exceptions are commonly used in Python?
+
+**Answer:**
+
+- ZeroDivisionError
+- ValueError
+- TypeError
+- IndexError
+- KeyError
+- FileNotFoundError
